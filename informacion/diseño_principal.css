@@ -4,14 +4,27 @@ body {
     padding: 0;
 }
 
+.title {
+    margin-top: 10px; /* Aumentar el margen superior */
+    margin-bottom: 40px; /* Margen inferior */
+    text-align: center; /* Centrar horizontalmente */
+    font-size: 56px; /* Tamaño de fuente más grande */
+}
+
 .container {
     display: flex;
     height: 100vh;
 }
 
 .sidebar {
-    width: 200px;
+    width: 300px;
     background-color: #f0f0f0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    overflow-y: auto;
+    font-size: 30px; /* Tamaño de fuente más grande para el menú */
 }
 
 .sidebar ul {
