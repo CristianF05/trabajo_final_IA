@@ -112,12 +112,15 @@ body {
 }
 
 .add-to-cart {
-    margin-top: 10px;
+    margin-top: 10px; /* Espacio superior */
     padding: 8px 16px;
     background-color: #007bff;
     color: white;
     border: none;
     cursor: pointer;
+    display: block; /* Cambiar a bloque para ocupar todo el ancho disponible */
+    width: calc(100% - 20px); /* Ancho del 100% menos el espacio de los márgenes */
+    text-align: center; /* Centrar el texto horizontalmente */
 }
 
 .add-to-cart:hover {
