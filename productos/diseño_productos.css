@@ -59,8 +59,71 @@ body {
     margin-top: 10px;
 }
 
-.product button {
+.quantity {
+    display: flex;
+    align-items: center;
+}
+
+.quantity button {
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.quantity button:hover {
+    background-color: #0056b3;
+}
+
+.quantity .quantity-value {
+    margin: 0 10px;
+}
+/* Estilos ya existentes para la barra lateral y el contenido principal */
+
+.product {
+    width: 200px;
+    margin: 10px;
+    padding: 15px;
+    border: 1px solid #0e2192;
+    text-align: center;
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+}
+
+.product p {
     margin-top: 10px;
+}
+
+.quantity {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.quantity input {
+    width: 40px;
+    text-align: center;
+}
+
+.quantity button {
+    margin: 0 5px;
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.quantity button:hover {
+    background-color: #0056b3;
+}
+
+.add-to-cart {
+    margin-top: 10px; /* Agregar espacio entre la cantidad y el botón */
     padding: 8px 16px;
     background-color: #007bff;
     color: white;
@@ -68,6 +131,6 @@ body {
     cursor: pointer;
 }
 
-.product button:hover {
+.add-to-cart:hover {
     background-color: #0056b3;
 }

@@ -34,12 +34,18 @@ body {
 
 .main-content {
     flex-grow: 1;
-    padding: 20px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .products {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .product {

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tienda Virtual</title>
+    <title>Tienda Virtual - Productos</title>
     <link rel="stylesheet" href="diseño_productos.css">
 </head>
 <body>
@@ -17,12 +17,25 @@
             </ul>
         </div>
         <div class="main-content">
-            <h1>Bienvenido a nuestra tienda virtual</h1>
-            <p>Explora nuestros productos y encuentra lo que necesitas.</p>
+            <h1>Tienda pepito</h1>
             <div class="products">
+                <div class="product">
+                    <img src="imagenes/3m-221t-iron-lick.avif" alt="Producto 1">
+                    <p>Lija fina de 2.5mm</p>
+                    <p>Precio: S/15.00</p>
+                    <div class="quantity">
+                        <button class="decrease">-</button>
+                        <input type="text" value="0">
+                        <button class="increase">+</button>
+                    </div>
+                    <button class="add-to-cart">Agregar al carrito</button>
+                </div>
+                <!-- Repite este bloque de producto según sea necesario -->
                 <!-- Aquí se cargarán los productos dinámicamente -->
             </div>
         </div>
     </div>
+
+    <script src="interacion.js"></script>
 </body>
 </html>
