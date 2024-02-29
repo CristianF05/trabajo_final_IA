@@ -10,6 +10,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
         // Aquí podrías agregar lógica de verificación del usuario y contraseña
         // Por simplicidad, redireccionamos al usuario a la página principal
-        window.location.href = '../pagina_principal/pagina_principal.html';
+        window.location.href = '../informacion/informacion.html';
     });
 });
