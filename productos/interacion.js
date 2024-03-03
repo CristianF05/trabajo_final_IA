@@ -1,8 +1,11 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const increaseButtons = document.querySelectorAll('.increase');
-    const decreaseButtons = document.querySelectorAll('.decrease');
+    const increaseButtons = document.querySelectorAll('.increment');
+    const decreaseButtons = document.querySelectorAll('.decrement');
     const addToCartButtons = document.querySelectorAll('.add-to-cart');
     const quantityInputs = document.querySelectorAll('.quantity input');
+    const cartItems = document.querySelector('.cart-items');
+
+    let totalItems = 0;
 
     increaseButtons.forEach((button, index) => {
         button.addEventListener('click', function() {
@@ -22,6 +25,8 @@ document.addEventListener('DOMContentLoaded', function() {
         button.addEventListener('click', function() {
             const quantity = parseInt(quantityInputs[index].value);
             if (quantity > 0) {
+                totalItems += quantity;
+                updateCartItems();
                 // Aquí podrías agregar la lógica para agregar el producto al carrito
                 alert(`Agregado al carrito: Producto ${index + 1}, Cantidad: ${quantity}`);
             } else {
@@ -29,4 +34,8 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     });
+
+    function updateCartItems() {
+        cartItems.textContent = totalItems;
+    }
 });
